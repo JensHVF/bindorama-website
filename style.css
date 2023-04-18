@@ -25,3 +25,25 @@ p {
 h1 {
     font-family: "Lucida Handwriting";
 }
+.faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+}
+.faq-page{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+}
+.hr-line{
+      width: 60%;
+      margin: auto;
+      
+    }
