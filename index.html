@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bobby the bobber</title>
-    <link rel="stylesheet"
-    href="style.css">
-    <style>
-
-
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Fancier Website</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="images/redpanda.jpg" alt="Here should lie a red panda :(">
-
-    <h1>Red panda</h1>
-    <p class="redpanda">Red PANDAS are <em>awesome</em>!</p>
-    <p>Some other text</p>
-    <div id="testDiv">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima animi laudantium excepturi natus omnis porro ducimus dolorem exercitationem ipsa velit accusantium ab alias aliquid, sequi corrupti, ad necessitatibus maxime doloribus possimus vitae? Dolorem cum iusto ducimus?</p>
-    </div>
-    <a href="https://www.smithsonianmag.com/science-nature/eight-amazing-facts-about-red-pandas-180979708/" target="_blank">Cool facts about red pandas</a>
-    <br>
-    <a href="mailto:janni.c.andersen@gmail.com">Mail me!</a>
-    <br>
-    <button id="demo" onclick="myFunction()">Hello</button>
-    <br>
-    <input type="text">
+	<header>
+		<div class="container">
+			<h1>My Fancier Website</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="hero">
+			<div class="container">
+				<h2>Welcome to My Fancier Website</h2>
+				<p>Here you will find everything you need to know about our products and services.</p>
+				<a href="#" class="btn">Learn More</a>
+			</div>
+		</section>
+		<section id="features">
+			<div class="container">
+				<h2>Our Features</h2>
+				<div class="feature-item">
+					<i class="fas fa-laptop-code"></i>
+					<h3>Web Development</h3>
+					<p>We specialize in creating responsive websites using the latest technologies.</p>
+				</div>
+				<div class="feature-item">
+					<i class="fas fa-mobile-alt"></i>
+					<h3>Mobile Apps</h3>
+					<p>We can create custom mobile apps for iOS and Android platforms.</p>
+				</div>
+				<div class="feature-item">
+					<i class="fas fa-shopping-cart"></i>
+					<h3>E-commerce Solutions</h3>
+					<p>We can help you set up an online store to sell your products and services.</p>
+				</div>
+			</div>
+		</section>
+		<section id="cta">
+			<div class="container">
+				<h2>Get in Touch</h2>
+				<p>Ready to take your business to the next level? Contact us today!</p>
+				<a href="#" class="btn">Contact Us</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<p>&copy; 2023 My Fancier Website. All rights reserved.</p>
+			<nav>
+				<ul>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms of Service</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
     <script src="App.js"></script>
 </body>
 </html>
