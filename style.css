@@ -1,0 +1,27 @@
+img {
+    width: 400px;
+    border-radius: 20px;
+    float:left;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+.redpanda {
+    font-weight: bold;
+}
+#testDiv {
+    background-color: burlywood;
+    padding: 20px;
+    padding-inline-start: 20px;
+}
+a:hover {
+    text-decoration-line: none;
+}
+a:visited {
+    color: rgb(158, 209, 215);
+}
+p {
+    letter-spacing: 4px;
+}
+h1 {
+    font-family: "Lucida Handwriting";
+}
