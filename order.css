@@ -18,11 +18,23 @@ nav > ul {
 nav > ul > li {
     display: inline-block;
     padding-right: 2em;
+    padding: 10px;
+}
+nav > ul > li:hover {
+    background-color: #4CAF50;
 }
 
 #menu-logo {
     margin: 0;
     width: 90%;
+}
+
+footer {
+    background-color: rgb(51, 34, 11);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* Set font and background color for the entire form */
@@ -52,6 +64,9 @@ form {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background-color: black;
   }
   
   /* Style the output message */
