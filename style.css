@@ -14,16 +14,19 @@ html, body {
     padding: 20px;
     padding-inline-start: 20px;
 }
+
+nav a:visited,
+nav a:link {
+    color: #cbb26b;
+    font-style: none;
+    text-decoration: none;
+}
+
 a {
     font-style: none;
     text-decoration: none;
 }
-a:hover {
-    text-decoration-line: none;
-}
-a:visited {
-    color: #cbb26b;
-}
+
 p {
     letter-spacing: 4px;
 }
@@ -44,7 +47,7 @@ ul {
     padding: 5px;
     text-align: center;
     font-size:x-large;
-
+    list-style: none;
 
 }
 .columns > li:hover {
