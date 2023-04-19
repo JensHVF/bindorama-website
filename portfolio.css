@@ -1,5 +1,27 @@
 
-
+#testDiv {
+    background-color: burlywood;
+    padding: 20px;
+    padding-inline-start: 20px;
+}
+a {
+    font-style: none;
+}
+a:hover {
+    text-decoration-line: none;
+}
+a:visited {
+    color: rgb(158, 209, 215);
+}
+p {
+    letter-spacing: 4px;
+}
+h1 {
+    font-family: "Lucida Handwriting";
+}
+ul {
+    list-style-type: none;
+}
 
 .columns {
     background-color: rgb(168, 149, 142);
