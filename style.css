@@ -15,7 +15,7 @@ a:hover {
     text-decoration-line: none;
 }
 a:visited {
-    color: rgb(158, 209, 215);
+    color: #cbb26b;
 }
 p {
     letter-spacing: 4px;

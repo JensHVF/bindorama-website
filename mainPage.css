@@ -13,11 +13,13 @@ body {
     background-image: url(images/books.jpg);
 }
 
+
 header {
     background-color: whitesmoke;
 }
 
 main {
+    padding-left: 5%;
     background-color: whitesmoke;
 }
 
