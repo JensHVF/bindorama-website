@@ -38,6 +38,15 @@ footer {
     width: 100%;
 }
 
+.div-radiobutton {
+    padding: 10px;
+    background-color: #fff;
+    width: 99%;
+    border-radius: 5px;
+
+margin-bottom: 10px;
+}
+
 /* Set font and background color for the entire form */
 form {
     font-family: Arial, sans-serif;
