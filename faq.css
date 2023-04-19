@@ -1,0 +1,52 @@
+.faq-heading{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+}
+.faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+}
+.faq-page{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+}
+.hr-line{
+      width: 60%;
+      margin: auto;  
+    }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #989595;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: black;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
