@@ -11,3 +11,27 @@
    width: 50%; 
    padding: auto;  
 }
+
+
+header {
+    background-color: whitesmoke;
+}
+
+main {
+    padding-left: 5%;
+    background-color: whitesmoke;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
