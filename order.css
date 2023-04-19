@@ -32,3 +32,19 @@ form {
     font-weight: bold;
     margin-top: 20px;
   }
+
+  /*images for radio button selections*/
+  #binding-type-images {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #classic:checked ~ #binding-type-images #classic-image {
+    display: block;
+  }
+
+  #classic-image {
+    width: 30%;
+  }
