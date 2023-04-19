@@ -1,6 +1,25 @@
-/*------------------------------------*\
- MATERIAL PHOTO GALLERY
- \*------------------------------------*/
+
+
+
+.columns {
+    background-color: rgb(168, 149, 142);
+    display: flex;
+    border:solid 1px rgb(28, 28, 59);
+}
+.columns > li {
+    flex:1;
+    padding: 5px;
+    text-align: center;
+    font-size:x-large;
+
+
+}
+.columns > li:hover {
+    background-color: rgb(253, 241, 237);
+}
+
+
+
  .m-p-g {
     max-width: 100%;
     margin: 0 auto;
