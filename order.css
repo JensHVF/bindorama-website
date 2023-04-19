@@ -1,7 +1,16 @@
+
+.div-radiobutton {
+    padding: 10px;
+    background-color: #fff;
+    width: 99%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 /* Set font and background color for the entire form */
 form {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #924848;
     padding: 20px;
   }
   
@@ -10,7 +19,7 @@ form {
   input[type="email"],
   input[type="number"] {
     display: block;
-    width: 100%;
+    width: 99%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -25,6 +34,9 @@ form {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background-color: black;
   }
   
   /* Style the output message */
@@ -46,5 +58,21 @@ form {
   }
 
   #classic-image {
+    width: 30%;
+  }
+
+  #secretBelgian:checked ~ #binding-type-images #secret-belgian-image {
+    display: block;
+  }
+
+  #secret-belgian-image {
+    width: 30%;
+  }
+
+  #coptic:checked ~ #binding-type-images #coptic-image {
+    display: block;
+  }
+
+  #coptic-image {
     width: 30%;
   }

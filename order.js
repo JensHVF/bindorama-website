@@ -21,6 +21,8 @@ form.addEventListener("submit", (event) => {
 
 //radiobutton binding type image display
 const classicRadio = document.querySelector('#classic');
+const secretBelgianRadio = document.querySelector('#secretBelgian');
+const copticRadio = document.querySelector('#coptic');
 const bindingImages = document.querySelector('#binding-type-images');
 
 classicRadio.addEventListener('mouseover', () => {
@@ -29,6 +31,24 @@ classicRadio.addEventListener('mouseover', () => {
   });
 
   classicRadio.addEventListener('mouseout', () => {
+    bindingImages.style.display = 'none';
+  });
+
+  secretBelgianRadio.addEventListener('mouseover', () => {
+    bindingImages.style.display = 'block';
+    bindingImages.style.left = secretBelgianRadio.offsetLeft + 'px';
+  });
+
+  secretBelgianRadio.addEventListener('mouseout', () => {
+    bindingImages.style.display = 'none';
+  });
+
+  copticRadio.addEventListener('mouseover', () => {
+    bindingImages.style.display = 'block';
+    bindingImages.style.left = copticRadio.offsetLeft + 'px';
+  });
+
+  copticRadio.addEventListener('mouseout', () => {
     bindingImages.style.display = 'none';
   });
 
