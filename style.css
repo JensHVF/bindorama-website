@@ -15,6 +15,7 @@ img {
 }
 a {
     font-style: none;
+    text-decoration: none;
 }
 a:hover {
     text-decoration-line: none;
