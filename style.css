@@ -279,13 +279,6 @@ ul {
     color: red;
   }
   
-  h2 {
-    font-weight: 300;
-    margin: 4vh 4vw;
-    letter-spacing: 3px;
-    color: grey;
-    text-transform: uppercase;
-  }
   .demo-btn {
     display: inline-block;
     margin: 0 2.5px 4vh 2.5px;
