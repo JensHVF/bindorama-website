@@ -51,6 +51,12 @@ ul {
 
 /*faq css */
 
+.faq-heading{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+}
 .faq-container{
     display: flex;
     justify-content: center;
