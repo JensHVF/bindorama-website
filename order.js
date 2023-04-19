@@ -9,10 +9,10 @@ form.addEventListener("submit", (event) => {
   const email = form.elements["email"].value;
   const bookTitle = form.elements["bookTitle"].value;
   const quantity = form.elements["quantity"].value;
-  const gender = document.querySelector('input[name="gender"]:checked').value;
+  const bindingType = document.querySelector('input[name="bindingType"]:checked').value;
 
   // Generate output
-  const message = `Thank you, ${gender} ${name}! You have ordered ${quantity} copy/copies of "${bookTitle}". We will send a confirmation to ${email}.`;
+  const message = `Thank you, ${bindingType} ${name}! You have ordered ${quantity} copy/copies of "${bookTitle}". We will send a confirmation to ${email}.`;
   output.textContent = message;
 
   // Clear form inputs
