@@ -48,3 +48,19 @@ form {
   #classic-image {
     width: 30%;
   }
+
+  #secretBelgian:checked ~ #binding-type-images #secret-belgian-image {
+    display: block;
+  }
+
+  #secret-belgian-image {
+    width: 30%;
+  }
+
+  #coptic:checked ~ #binding-type-images #coptic-image {
+    display: block;
+  }
+
+  #coptic-image {
+    width: 30%;
+  }
