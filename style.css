@@ -37,21 +37,70 @@ ul {
     list-style-type: none;
 }
 
-.columns {
-    background-color: rgb(255, 255, 255);
+header {
+    position: fixed; 
+    top:0;
+    left:0;
+    width: 100%;
     display: flex;
-    border:solid 1px rgb(28, 28, 59);
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    justify-content: space-between;
+}
+
+main {
+    display: block;
+    padding-top: 2.5em;
+    padding-bottom: 3em;
+    min-height: 85%;
+
+}
+nav > ul {
+    display: block;
+    list-style: none;
+}
+nav > ul > li {
+    display: inline-block;
+    padding-right: 2em;
+    padding: 10px;
+}
+nav > ul > li:hover {
+    background-color: #4CAF50;
+}
+
+footer {
+    background-color: rgb(51, 34, 11);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-top {
+    margin-left: auto;
+}
+
+.columns {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
 }
 .columns > li {
-    flex:1;
     padding: 2px;
     text-align: center;
     font-size:x-large;
-    list-style: none;
-
+    flex: 1;
+    margin-right: 20px;
 }
 .columns > li:hover {
     background-color: rgb(109, 78, 68);
+}
+
+#menu-logo {
+    height: 40px;
+    flex:1; s
 }
 
 /*faq css */
