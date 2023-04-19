@@ -11,6 +11,7 @@ main {
     padding-top: 2.5em;
     padding-bottom: 3em;
     min-height: 85%;
+
 }
 nav > ul {
     display: block;
@@ -40,7 +41,7 @@ footer {
 /* Set font and background color for the entire form */
 form {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #924848;
     padding: 20px;
   }
   
@@ -49,7 +50,7 @@ form {
   input[type="email"],
   input[type="number"] {
     display: block;
-    width: 100%;
+    width: 99%;
     padding: 10px;
     border: none;
     border-radius: 5px;
