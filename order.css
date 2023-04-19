@@ -27,7 +27,8 @@ nav > ul > li:hover {
 
 #menu-logo {
     margin: 0;
-    width: 90%;
+    width: 20%;
+    float:inline-start;
 }
 
 footer {

@@ -38,20 +38,20 @@ ul {
 }
 
 .columns {
-    background-color: rgb(168, 149, 142);
+    background-color: rgb(255, 255, 255);
     display: flex;
     border:solid 1px rgb(28, 28, 59);
 }
 .columns > li {
     flex:1;
-    padding: 5px;
+    padding: 2px;
     text-align: center;
     font-size:x-large;
     list-style: none;
 
 }
 .columns > li:hover {
-    background-color: rgb(253, 241, 237);
+    background-color: rgb(109, 78, 68);
 }
 
 /*faq css */
