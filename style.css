@@ -49,6 +49,8 @@ ul {
     background-color: rgb(253, 241, 237);
 }
 
+/*faq css */
+
 .faq-container{
     display: flex;
     justify-content: center;
@@ -95,3 +97,21 @@ ul {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
 }
+
+/*about css */
+
+.about-heading {
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto; 
+}
+
+.about-body {
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;  
+}
+
+
