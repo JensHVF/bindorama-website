@@ -9,6 +9,7 @@
 }
 a {
     font-style: none;
+    text-decoration: none;
 }
 a:hover {
     text-decoration-line: none;
@@ -121,3 +122,4 @@ h2 {
   color: grey;
   text-transform: uppercase;
 }
+
