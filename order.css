@@ -12,6 +12,8 @@ form {
     font-family: Arial, sans-serif;
     background-color: #924848;
     padding: 20px;
+    width: 50%;
+    margin: auto;
   }
   
   /* Style the input fields */
