@@ -1,5 +1,17 @@
 const form = document.getElementById("orderForm");
 const output = document.getElementById("output");
+var price = 0; 
+const a4Price = 250;
+const a5Price = 200;
+const a6Price = 150;
+const a7Price = 100;
+const classicPrice = 50; 
+const secretBelgianPrice = 50; 
+const copticPrice = 40; 
+
+const bookSizeRadios = document.getElementsBy("bookSize");
+const bindingTypeRadios = document.getElementsByName("bindingType");
+const priceElement = document.getElementById('price');
 
 form.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent form submission from reloading the page
@@ -10,7 +22,7 @@ form.addEventListener("submit", (event) => {
     const quantity = form.elements["quantity"].value;
     const bookSize = document.querySelector('input[name="bookSize"]:checked').value;
     const bindingType = document.querySelector('input[name="bindingType"]:checked').value;
-  
+    calculatePrice()
     // Generate output
     const message = `Thank you,  ${name}! You have ordered ${quantity} copy/copies of ${bindingType} ${bookSize}. We will send a confirmation to ${email}.`;
     output.textContent = message;
@@ -19,11 +31,34 @@ form.addEventListener("submit", (event) => {
     form.reset();
   });
 
+//calculate price
+function calculatePrice() {
+  let price = 0; 
+  if (bookSizeRadios[i].value === 'a4') {
+    price += a4Price;
+  } else if (bookSizeRadios[i].value === 'a5') {
+    price += a5Price;
+  } else if (bookSizeRadios[i].value === 'a6') {
+    price += a6Price;
+  } else if (bookSizeRadios[i].value === 'a7') {
+    price += a7Price;
+  }
+
+  priceElement.innerHTML = '$' + price.toFixed(2);
+}
+
+for (let i = 0; i < bookSizeRadios.length; i++) {
+  bookSizeRadios[i].addEventListener('click', calculatePrice);
+}
+
+
+
 //radiobutton binding type image display
 const classicRadio = document.querySelector('#classic');
 const secretBelgianRadio = document.querySelector('#secretBelgian');
 const copticRadio = document.querySelector('#coptic');
 const bindingImages = document.querySelector('#binding-type-images');
+
 
 classicRadio.addEventListener('mouseover', () => {
     bindingImages.style.display = 'block';
