@@ -82,6 +82,7 @@ footer {
     margin: 0;
     padding: 0;
 }
+
 .columns > li {
     padding: 2px;
     text-align: center;
@@ -89,6 +90,7 @@ footer {
     flex: 1;
     margin-right: 20px;
 }
+
 .columns > li:hover {
     background-color: #beb292;
 }
