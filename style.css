@@ -20,11 +20,12 @@ a {
 }
 
 p {
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-family: "Trebuchet MS";
 }
 
 h1 {
-    font-family: "Lucida Handwriting";
+    font-family: "Trebuchet MS";
 }
 
 ul {
@@ -70,6 +71,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    font-family: "Trebuchet MS";
 }
 
 .nav-top a {
@@ -81,6 +83,7 @@ footer {
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
+    font-family: "Trebuchet MS";
 }
 
 .columns > li {

@@ -1,19 +1,40 @@
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    /*display: table-cell;*/
-    vertical-align: middle;
-}
 
 main {
     padding-left: 5%;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
 }
-
+#bindorama {
+    width: 650px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #hero {
+    text-align: center;
+  }
+  section#hero {
+    background-color: #f5f5f5;
+    padding: 50px 5%;
+  }
+  
+  section#hero h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  section#hero p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1010px;
+  }
+  hr {
+    height: 10px;
+    background-color: #000000;
+    border: none;
+    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }

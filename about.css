@@ -30,3 +30,7 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
+.hr-line{
+    width: 60%;
+    margin: auto;  
+  }
