@@ -9,6 +9,7 @@ html, body {
 .redpanda {
     font-weight: bold;
 }
+
 #testDiv {
     background-color: burlywood;
     padding: 20px;
@@ -43,9 +44,9 @@ header {
     left:0;
     width: 100%;
     display: flex;
-    align-items: center;
     background-color: #ffffff;
     justify-content: space-between;
+    align-items: center;
 }
 
 main {
@@ -54,6 +55,7 @@ main {
     padding-bottom: 3em;
     min-height: 85%;
 }
+
 nav > ul {
     display: block;
     list-style: none;
@@ -75,8 +77,8 @@ footer {
     width: 100%;
 }
 
-.nav-top {
-    margin-left: auto;
+.nav-top a {
+    white-space: nowrap;
 }
 
 .columns {
@@ -93,7 +95,11 @@ footer {
     margin-right: 20px;
 }
 .columns > li:hover {
-    background-color: rgb(109, 78, 68);
+    background-color: #beb292;
+}
+
+.columns > li > a:hover {
+    color: #eeece7;
 }
 
 #menu-logo {
