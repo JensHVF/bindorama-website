@@ -57,8 +57,6 @@ function calculatePrice() {
 
   getSelected("bindingType");
 
-  alert(index)
-
   if (index === 0) {
     price += classicPrice;
   } else if (index === 1) {
