@@ -1,6 +1,6 @@
 const form = document.getElementById("orderForm");
 const output = document.getElementById("output");
-var price = 0; 
+let price = 0; 
 const a4Price = 250;
 const a5Price = 200;
 const a6Price = 150;
@@ -9,7 +9,7 @@ const classicPrice = 50;
 const secretBelgianPrice = 50; 
 const copticPrice = 40; 
 
-const bookSizeRadios = document.getElementsBy("bookSize");
+const bookSizeRadios = document.getElementsByName("bookSize");
 const bindingTypeRadios = document.getElementsByName("bindingType");
 const priceElement = document.getElementById('price');
 
@@ -32,8 +32,7 @@ form.addEventListener("submit", (event) => {
   });
 
 //calculate price
-function calculatePrice() {
-  let price = 0; 
+function calculatePrice() { 
   if (bookSizeRadios[i].value === 'a4') {
     price += a4Price;
   } else if (bookSizeRadios[i].value === 'a5') {
@@ -45,20 +44,15 @@ function calculatePrice() {
   }
 
   priceElement.innerHTML = '$' + price.toFixed(2);
+
+  console.log(price);
 }
-
-for (let i = 0; i < bookSizeRadios.length; i++) {
-  bookSizeRadios[i].addEventListener('click', calculatePrice);
-}
-
-
 
 //radiobutton binding type image display
 const classicRadio = document.querySelector('#classic');
 const secretBelgianRadio = document.querySelector('#secretBelgian');
 const copticRadio = document.querySelector('#coptic');
 const bindingImages = document.querySelector('#binding-type-images');
-
 
 classicRadio.addEventListener('mouseover', () => {
     bindingImages.style.display = 'block';
