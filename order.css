@@ -7,10 +7,14 @@
     margin-bottom: 10px;
 }
 
+#output {
+  border: solid 2px #eeece7;
+}
+
 /* Set font and background color for the entire form */
 form {
     font-family: Arial, sans-serif;
-    background-color: #924848;
+    background-color: #646464;
     padding: 20px;
     width: 50%;
     margin: auto;
