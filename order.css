@@ -48,14 +48,28 @@ form {
   }
 
   /*images for radio button selections*/
-  #binding-type-images {
+  #binding-type-image1 {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
   }
 
-  #classic:checked ~ #binding-type-images #classic-image {
+  #binding-type-image2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #binding-type-image3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #classic:checked ~ #binding-type-image1 #classic-image {
     display: block;
   }
 
@@ -63,7 +77,7 @@ form {
     width: 30%;
   }
 
-  #secretBelgian:checked ~ #binding-type-images #secret-belgian-image {
+  #secretBelgian:checked ~ #binding-type-image2 #secret-belgian-image {
     display: block;
   }
 
@@ -71,7 +85,7 @@ form {
     width: 30%;
   }
 
-  #coptic:checked ~ #binding-type-images #coptic-image {
+  #coptic:checked ~ #binding-type-image3 #coptic-image {
     display: block;
   }
 
