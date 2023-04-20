@@ -1,12 +1,13 @@
 const form = document.getElementById("orderForm");
 const output = document.getElementById("output");
-let price = 0; 
+let price = 0;
+let index = 0; 
 const a4Price = 250;
 const a5Price = 200;
 const a6Price = 150;
 const a7Price = 100;
 const classicPrice = 50; 
-const secretBelgianPrice = 50; 
+const secretBelgianPrice = 45; 
 const copticPrice = 40; 
 
 const bookSizeRadios = document.getElementsByName("bookSize");
@@ -22,7 +23,6 @@ form.addEventListener("submit", (event) => {
     const quantity = form.elements["quantity"].value;
     const bookSize = document.querySelector('input[name="bookSize"]:checked').value;
     const bindingType = document.querySelector('input[name="bindingType"]:checked').value;
-    calculatePrice()
     // Generate output
     const message = `Thank you,  ${name}! You have ordered ${quantity} copy/copies of ${bindingType} ${bookSize}. We will send a confirmation to ${email}.`;
     output.textContent = message;
@@ -31,53 +31,90 @@ form.addEventListener("submit", (event) => {
     form.reset();
   });
 
+  function getSelected(name) {
+    var radios = document.getElementsByName(name);
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        index = i;
+      }
+    }
+    return null; // return null if no radio button is selected
+  }
+
 //calculate price
 function calculatePrice() { 
-  if (bookSizeRadios[i].value === 'a4') {
+  price = 0;
+  getSelected("bookSize");
+  if (index === 0) {
     price += a4Price;
-  } else if (bookSizeRadios[i].value === 'a5') {
+  } else if (index === 1) {
     price += a5Price;
-  } else if (bookSizeRadios[i].value === 'a6') {
+  } else if (index === 2) {
     price += a6Price;
-  } else if (bookSizeRadios[i].value === 'a7') {
+  } else if (index === 3) {
     price += a7Price;
   }
 
-  priceElement.innerHTML = '$' + price.toFixed(2);
+  getSelected("bindingType");
 
-  console.log(price);
+  alert(index)
+
+  if (index === 0) {
+    price += classicPrice;
+  } else if (index === 1) {
+    price += secretBelgianPrice;
+  } else if (index === 2) {
+    price += copticPrice;
+  }
+
+  priceElement.textContent = "Pris: " + price;
 }
 
 //radiobutton binding type image display
 const classicRadio = document.querySelector('#classic');
 const secretBelgianRadio = document.querySelector('#secretBelgian');
 const copticRadio = document.querySelector('#coptic');
-const bindingImages = document.querySelector('#binding-type-images');
+const classicImage = document.querySelector('#binding-type-image1');
+const secretBelgianImage = document.querySelector('#binding-type-image2');
+const copticImage = document.querySelector('#binding-type-image3');
+
 
 classicRadio.addEventListener('mouseover', () => {
-    bindingImages.style.display = 'block';
-    bindingImages.style.left = classicRadio.offsetLeft + 'px';
+   classicImage.style.display = 'block';
+   classicImage.style.left = classicRadio.offsetLeft + 'px';
   });
 
   classicRadio.addEventListener('mouseout', () => {
-    bindingImages.style.display = 'none';
+    classicImage.style.display = 'none';
+  });
+
+  classicRadio.addEventListener('change', () => {
+    calculatePrice();
   });
 
   secretBelgianRadio.addEventListener('mouseover', () => {
-    bindingImages.style.display = 'block';
-    bindingImages.style.left = secretBelgianRadio.offsetLeft + 'px';
+    secretBelgianImage.style.display = 'block';
+    secretBelgianImage.style.left = secretBelgianRadio.offsetLeft + 'px';
   });
 
   secretBelgianRadio.addEventListener('mouseout', () => {
-    bindingImages.style.display = 'none';
+    secretBelgianImage.style.display = 'none';
+  });
+
+  secretBelgianRadio.addEventListener('change', () => {
+    calculatePrice();
   });
 
   copticRadio.addEventListener('mouseover', () => {
-    bindingImages.style.display = 'block';
-    bindingImages.style.left = copticRadio.offsetLeft + 'px';
+    copticImage.style.display = 'block';
+    copticImage.style.left = copticRadio.offsetLeft + 'px';
   });
 
   copticRadio.addEventListener('mouseout', () => {
-    bindingImages.style.display = 'none';
+    copticImage.style.display = 'none';
+  });
+
+  copticRadio.addEventListener('change', () => {
+    calculatePrice();
   });
 
