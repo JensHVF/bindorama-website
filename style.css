@@ -9,13 +9,12 @@ html, body {
 nav a:visited,
 nav a:link {
     color: #cbb26b;
-    font-style: none;
+    font-style: "Trebuchet MS";
     text-decoration: none;
 }
 
 a {
-    color: #cbb26b;
-    font-style: none;
+    font-style: "Trebuchet MS";
     text-decoration: none;
 }
 
@@ -79,7 +78,7 @@ footer {
 }
 
 .columns {
-    display: flex;
+    display:flex; 
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
