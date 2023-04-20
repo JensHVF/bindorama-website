@@ -29,7 +29,7 @@
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .faq-page:hover {
-    background-color: #989595;
+    background-color: #646464;
 }
 /* Style the faq-page panel. Note: hidden by default */
 .faq-body {
