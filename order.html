@@ -52,12 +52,14 @@
 				<input type="radio" id="coptic" name="bindingType" value="coptic" required>
 				<label for="coptic">Coptic</label><br>
 			</div>
-		  
-			<label for="quantity">Quantity:</label>
-			<input type="number" id="quantity" name="quantity" min="1" max="10" required>
-			
-			<label id="price">Pris:</label>
 
+			<label for="style">Beskriv vilken stil du vill ha på ditt omslag:</label>
+			<input type="text" id="style" name="style" required>
+		  
+		
+			<label id="price">Pris:</label>
+			<br>
+			<br>
 			<button type="submit" id="submitBtn">Submit Order</button>
 		</form>
 
@@ -71,7 +73,7 @@
 			<img id="coptic-image"src="images\coptic.jpg" alt="Coptic bindning">
 		</div>
 
-		<div id="output"></div>
+		<div><p id="output"></p></div>
 	</main>
 <footer>
 	<nav>
