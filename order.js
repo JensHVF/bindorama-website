@@ -23,32 +23,35 @@ form.addEventListener("submit", (event) => {
 const classicRadio = document.querySelector('#classic');
 const secretBelgianRadio = document.querySelector('#secretBelgian');
 const copticRadio = document.querySelector('#coptic');
-const bindingImages = document.querySelector('#binding-type-images');
+const classicImage = document.querySelector('#binding-type-image1');
+const secretBelgianImage = document.querySelector('#binding-type-image2');
+const copticImage = document.querySelector('#binding-type-image3');
+
 
 classicRadio.addEventListener('mouseover', () => {
-    bindingImages.style.display = 'block';
-    bindingImages.style.left = classicRadio.offsetLeft + 'px';
+   classicImage.style.display = 'block';
+   classicImage.style.left = classicRadio.offsetLeft + 'px';
   });
 
   classicRadio.addEventListener('mouseout', () => {
-    bindingImages.style.display = 'none';
+    classicImage.style.display = 'none';
   });
 
   secretBelgianRadio.addEventListener('mouseover', () => {
-    bindingImages.style.display = 'block';
-    bindingImages.style.left = secretBelgianRadio.offsetLeft + 'px';
+    secretBelgianImage.style.display = 'block';
+    secretBelgianImage.style.left = secretBelgianRadio.offsetLeft + 'px';
   });
 
   secretBelgianRadio.addEventListener('mouseout', () => {
-    bindingImages.style.display = 'none';
+    secretBelgianImage.style.display = 'none';
   });
 
   copticRadio.addEventListener('mouseover', () => {
-    bindingImages.style.display = 'block';
-    bindingImages.style.left = copticRadio.offsetLeft + 'px';
+    copticImage.style.display = 'block';
+    copticImage.style.left = copticRadio.offsetLeft + 'px';
   });
 
   copticRadio.addEventListener('mouseout', () => {
-    bindingImages.style.display = 'none';
+    copticImage.style.display = 'none';
   });
 
