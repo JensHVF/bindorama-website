@@ -22,6 +22,10 @@ nav a:link {
     text-decoration: none;
 }
 
+main {
+    margin-top: 20px;
+}
+
 a {
     font-style: none;
     text-decoration: none;

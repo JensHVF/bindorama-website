@@ -7,16 +7,6 @@
     padding: 20px;
     padding-inline-start: 20px;
 }
-a {
-    font-style: none;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration-line: none;
-}
-a:visited {
-    color: rgb(158, 209, 215);
-}
 p {
     letter-spacing: 4px;
 }
@@ -26,24 +16,6 @@ h1 {
 ul {
     list-style-type: none;
 }
-
-.columns {
-    background-color: rgb(168, 149, 142);
-    display: flex;
-    border:solid 1px rgb(28, 28, 59);
-}
-.columns > li {
-    flex:1;
-    padding: 5px;
-    text-align: center;
-    font-size:x-large;
-
-
-}
-.columns > li:hover {
-    background-color: rgb(253, 241, 237);
-}
-
 
  .m-p-g {
     max-width: 100%;
