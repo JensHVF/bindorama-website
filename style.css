@@ -29,10 +29,11 @@ a {
 }
 
 p {
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-family: "Trebuchet MS";
 }
 h1 {
-    font-family: "Lucida Handwriting";
+    font-family: "Trebuchet MS";
 }
 ul {
     list-style-type: none;
@@ -54,6 +55,7 @@ main {
     padding-top: 3.5em;
     padding-bottom: 3em;
     min-height: 85%;
+    background-color: whitesmoke;
 }
 
 nav > ul {
