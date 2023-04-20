@@ -77,6 +77,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    font-family: "Trebuchet MS";
 }
 
 .nav-top a {
@@ -88,6 +89,7 @@ footer {
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
+    font-family: "Trebuchet MS";
 }
 .columns > li {
     padding: 2px;
