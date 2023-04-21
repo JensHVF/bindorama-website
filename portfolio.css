@@ -205,3 +205,12 @@ ul {
       font-size: 14px;
     }
   }
+  footer {
+    background-color: rgb(51, 34, 11);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Trebuchet MS";
+    z-index: 100;
+}
