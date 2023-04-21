@@ -1,4 +1,39 @@
 main {
-    padding-left: 5%;
     background-color: whitesmoke;
+    text-align: center;
 }
+
+
+p {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    padding: 100px;
+}
+.item {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+#instagram {
+    margin:auto;
+    max-width: 262px;
+}
+#tag {
+    margin:auto;
+    max-width: 200px;
+}
+#email {
+    margin:auto;
+    max-width: 200px;
+}
+#collab {
+    margin:auto;
+    max-width: 200px;
+}
+
+
+
+

@@ -36,19 +36,22 @@ form.addEventListener("submit", (event) => {
     form.reset();
   });
 
-  function getSelected(name) {
-    var radios = document.getElementsByName(name);
-    for (var i = 0; i < radios.length; i++) {
-      if (radios[i].checked) {
-        index = i;
-      }
+function getSelected(name) {
+  var radios = document.getElementsByName(name);
+  for (var i = 0; i < radios.length; i++) {
+    if (radios[i].checked) {
+      index = i;
     }
-    return null; // return null if no radio button is selected
   }
+  return null; // return null if no radio button is selected
+}
+
+
 
 //calculate price
 function calculatePrice() { 
   price = 0;
+  
   getSelected("bookSize");
   if (index === 0) {
     price += a4Price;
@@ -70,7 +73,7 @@ function calculatePrice() {
     price += copticPrice;
   }
 
-  priceElement.textContent = "Pris: " + price;
+  priceElement.textContent = "Pris: " + price + "kr";
 }
 
 //radiobutton binding type image display
@@ -81,6 +84,17 @@ const classicImage = document.querySelector('#binding-type-image1');
 const secretBelgianImage = document.querySelector('#binding-type-image2');
 const copticImage = document.querySelector('#binding-type-image3');
 
+bookSizeRadios.forEach(item => {
+  item.addEventListener('change', () => {
+    calculatePrice();
+  });
+});
+
+bindingTypeRadios.forEach(item => {
+  item.addEventListener('change', () => {
+    calculatePrice();
+  });
+});
 
 classicRadio.addEventListener('mouseover', () => {
    classicImage.style.display = 'block';
@@ -89,10 +103,6 @@ classicRadio.addEventListener('mouseover', () => {
 
   classicRadio.addEventListener('mouseout', () => {
     classicImage.style.display = 'none';
-  });
-
-  classicRadio.addEventListener('change', () => {
-    calculatePrice();
   });
 
   secretBelgianRadio.addEventListener('mouseover', () => {
@@ -104,10 +114,6 @@ classicRadio.addEventListener('mouseover', () => {
     secretBelgianImage.style.display = 'none';
   });
 
-  secretBelgianRadio.addEventListener('change', () => {
-    calculatePrice();
-  });
-
   copticRadio.addEventListener('mouseover', () => {
     copticImage.style.display = 'block';
     copticImage.style.left = copticRadio.offsetLeft + 'px';
@@ -115,9 +121,5 @@ classicRadio.addEventListener('mouseover', () => {
 
   copticRadio.addEventListener('mouseout', () => {
     copticImage.style.display = 'none';
-  });
-
-  copticRadio.addEventListener('change', () => {
-    calculatePrice();
   });
 
