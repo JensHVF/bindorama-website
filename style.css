@@ -60,8 +60,10 @@ nav > ul > li {
     padding: 10px;
 }
 nav > ul > li:hover {
-    background-color: #4CAF50;
-
+    background-color: #beb292;
+}
+nav > ul > li > a:hover {
+    color: #eeece7;
 }
 
 footer {
