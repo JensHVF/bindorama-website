@@ -65,21 +65,21 @@ form {
   #binding-type-image1 {
     display: none;
     position: absolute;
-    top: 0;
+    top: 190px;
     left: 0;
   }
 
   #binding-type-image2 {
     display: none;
     position: absolute;
-    top: 0;
+    top: 165px;
     left: 0;
   }
 
   #binding-type-image3 {
     display: none;
     position: absolute;
-    top: 0;
+    top: 175px;
     left: 0;
   }
 
