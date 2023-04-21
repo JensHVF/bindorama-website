@@ -38,3 +38,15 @@ main {
     margin-right: auto;
     width: 90%;
   }
+  #about-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #cbb26b;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+ 
