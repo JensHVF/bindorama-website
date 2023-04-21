@@ -1,14 +1,17 @@
 .about-heading {
     margin: auto;
     /* text-align: center; */
-   width: 50%; 
+   width: 45%; 
    padding: auto; 
+}
+.main-heading {
+    text-align: center;
 }
 
 .about-body {
     margin: auto;
     /* text-align: center; */
-   width: 50%; 
+   width: 40%; 
    padding: auto;  
 }
 
@@ -31,6 +34,6 @@ body {
     vertical-align: middle;
 }
 .hr-line{
-    width: 60%;
+    width: 45%;
     margin: auto;  
   }
