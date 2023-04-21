@@ -24,7 +24,11 @@ form.addEventListener("submit", (event) => {
     const bookSize = document.querySelector('input[name="bookSize"]:checked').value;
     const bindingType = document.querySelector('input[name="bindingType"]:checked').value;
     // Generate output
-    const message = `Thank you, ${name}! You have ordered ${quantity} copy/copies of ${bindingType} ${bookSize}. We will send a confirmation to ${email}.`;
+    const message = `Tack för din beställning, ${name}! Vi skickar ett e-mail till ${email} när din bok är klar. 
+    Beställningsspecifikationer: 
+    ${bindingType},
+    ${bookSize}.`;
+
     output.textContent = message;
     output.style.display = 'block';
   

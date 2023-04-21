@@ -2,9 +2,10 @@
 .div-radiobutton {
     padding: 10px;
     background-color: #fff;
-    width: 99%;
+    width: 97%;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 #output {
@@ -16,10 +17,14 @@
   padding: 2em;
 }
 
+.form-label-text {
+  color:  #eeece7;
+}
+
 /* Set font and background color for the entire form */
 form {
-    font-family: Arial, sans-serif;
-    background-color: #646464;
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #beb292;
     padding: 20px;
     width: 50%;
     margin: auto;
@@ -30,16 +35,17 @@ form {
   input[type="email"],
   input[type="number"] {
     display: block;
-    width: 99%;
+    width: 97%;
     padding: 10px;
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-top: 5px;
   }
   
   /* Style the submit button */
   button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #8f3b54;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -52,7 +58,6 @@ form {
   
   /* Style the output message */
   #output {
-    font-weight: bold;
     margin-top: 20px;
   }
 
