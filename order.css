@@ -67,6 +67,7 @@ form {
     position: absolute;
     top: 190px;
     left: 0;
+
   }
 
   #binding-type-image2 {
@@ -89,6 +90,8 @@ form {
 
   #classic-image {
     width: 30%;
+    border: 1px #eeece7 solid;
+    border-radius: 5px;
   }
 
   #secretBelgian:checked ~ #binding-type-image2 #secret-belgian-image {
@@ -97,6 +100,8 @@ form {
 
   #secret-belgian-image {
     width: 30%;
+    border: 1px #eeece7 solid;
+    border-radius: 5px;
   }
 
   #coptic:checked ~ #binding-type-image3 #coptic-image {
@@ -105,4 +110,6 @@ form {
 
   #coptic-image {
     width: 30%;
+    border: 1px #eeece7 solid;
+    border-radius: 5px;
   }
