@@ -80,19 +80,16 @@ footer {
 }
 
 .columns {
-    display:flex; 
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
+    display:block; 
+    list-style: none;
     font-family: "Trebuchet MS";
 }
 
 .columns > li {
-    padding: 2px;
     text-align: center;
     font-size:x-large;
     flex: 1;
-    margin-right: 20px;
+    margin-right: 20px;   
 }
 
 .columns > li:hover {
