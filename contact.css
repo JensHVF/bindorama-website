@@ -1,24 +1,34 @@
 main {
-    
     background-color: whitesmoke;
+    text-align: center;
 }
 
-.contacts {
-  column-count: 3;
-  column-gap: 30px;
-  padding: 30px;
-}
+
 p {
     padding: 20px;
 }
 
-.contact-images {
-    display: block;
-    position: absolute;
-
+.container {
+    display: flex;
+}
+.item {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+#instagram {
+    margin:auto;
+    max-width: 200px;
 }
 #tag {
     margin:auto;
     max-width: 200px;
 }
+#email {
+    margin:auto;
+    max-width: 200px;
+}
+
+
+
 
